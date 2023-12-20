@@ -1,0 +1,10 @@
+[Unit]
+Description=USB Autorun Service
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/xuanxianzhou/auto_copy_to_usb/usb_copy_script.py >> /var/log/usb-autorun.log 2>&1
+
+[Install]
+WantedBy=multi-user.target
