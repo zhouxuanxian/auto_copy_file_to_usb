@@ -50,7 +50,7 @@ def copy_folder(source_folder, usb_drive):
     
 
 def main():
-    source_folder = '/home/xuanxianzhou/auto_copy_to_usb/app'
+    source_folder = '/home/xuanxianzhou/Desktop/auto_copy_file_to_usb/app'
     new_name = 'PVMED'
     usb_drives = identify_usb_drives()
     if not usb_drives:
